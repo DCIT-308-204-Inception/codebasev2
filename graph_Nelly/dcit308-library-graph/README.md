@@ -63,9 +63,11 @@ src/test/java/gh/edu/ug/dcit308/library/graph/
 3. Confirm that the Project SDK is JDK 17 or newer.
 4. Open `GraphDemo.java`.
 5. Click the green Run arrow beside `main`.
-6. Open `LibraryGraphTest.java`.
-7. Click the green Run arrow beside the test class.
-8. Confirm that every test passes.
+
+## To run the tests:
+1. Open `LibraryGraphTest.java`.
+2. Click the green Run arrow beside the test class.
+3. Confirm that every test passes.
 
 Terminal alternatives:
 

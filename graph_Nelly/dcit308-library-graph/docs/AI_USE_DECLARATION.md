@@ -16,4 +16,4 @@ The submitted code was adapted to the team's Ghanaian library-service context.
 AI output was not treated as an authoritative source: correctness was verified
 through compilation, unit tests, manual traces, and comparison of Prim and
 Kruskal minimum-spanning-tree results. Any remaining errors in the submitted
-work are the responsibility of the student contributor.
+work are the responsibility of me, the student contributor.
