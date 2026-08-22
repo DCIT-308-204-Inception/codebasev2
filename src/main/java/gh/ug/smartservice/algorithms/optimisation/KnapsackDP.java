@@ -1,8 +1,7 @@
 package gh.ug.smartservice.algorithms.optimisation;
 
 /**
- * TODO(owner: <your name>): implement KnapsackDP.
- * See project brief Section 6/7 for required operations and evidence.
+ * TODO: knapsack-style request selection under a budget constraint.
  */
 public class KnapsackDP {
     // TODO

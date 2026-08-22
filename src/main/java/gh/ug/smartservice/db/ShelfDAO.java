@@ -1,8 +1,8 @@
 package gh.ug.smartservice.db;
 
 /**
- * TODO(owner: <your name>): JDBC access for the `shelves` table.
- * Reads/writes gh.ug.smartservice.model.Shelf. See brief Section 4/6.
+ * TODO: JDBC access for the `shelves` table. Reads/writes
+ * gh.ug.smartservice.model.Shelf.
  */
 public class ShelfDAO {
     // TODO

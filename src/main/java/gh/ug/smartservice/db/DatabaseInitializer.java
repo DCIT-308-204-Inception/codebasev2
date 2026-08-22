@@ -1,8 +1,8 @@
 package gh.ug.smartservice.db;
 
 /**
- * TODO(owner: <your name>): implement DatabaseInitializer.
- * See project brief Section 6/7 for required operations and evidence.
+ * TODO: run data/schema.sql against DatabaseConnection on first launch to
+ * create the shelves/paths/book_requests/staff/algorithm_runs tables.
  */
 public class DatabaseInitializer {
     // TODO

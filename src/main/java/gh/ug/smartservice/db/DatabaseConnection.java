@@ -1,8 +1,7 @@
 package gh.ug.smartservice.db;
 
 /**
- * TODO(owner: <your name>): implement DatabaseConnection.
- * See project brief Section 6/7 for required operations and evidence.
+ * TODO: open/hold the SQLite JDBC connection used by every DAO.
  */
 public class DatabaseConnection {
     // TODO

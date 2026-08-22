@@ -1,8 +1,8 @@
 package gh.ug.smartservice.experiments;
 
 /**
- * TODO(owner: <your name>): implement TreeExperiment.
- * See project brief Section 6/7 for required operations and evidence.
+ * TODO: measure BST/RedBlackTree/BTree insert/search runtime across input
+ * sizes.
  */
 public class TreeExperiment {
     // TODO

@@ -1,8 +1,8 @@
 package gh.ug.smartservice.experiments;
 
 /**
- * TODO(owner: <your name>): implement HashExperiment.
- * See project brief Section 6/7 for required operations and evidence.
+ * TODO: measure CustomHashTable performance as load factor rises
+ * (collision impact).
  */
 public class HashExperiment {
     // TODO

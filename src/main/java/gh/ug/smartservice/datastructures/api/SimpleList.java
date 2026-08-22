@@ -4,11 +4,9 @@ import java.util.Iterator;
 
 /**
  * Contract every list-like structure (array list, linked list) must satisfy.
- * Algorithm/engine authors should code against THIS interface, not against
- * DynamicArrayList or DoublyLinkedList directly. That way, swapping the
- * implementation or fixing a bug inside it never breaks calling code,
- * and two people can work on "the list" and "the code that uses a list"
- * at the same time without touching the same file.
+ * Algorithm/engine code should depend on this interface, not on
+ * DynamicArrayList or DoublyLinkedList directly, so swapping the
+ * implementation never breaks callers.
  */
 public interface SimpleList<T> extends Iterable<T> {
     void add(T item);

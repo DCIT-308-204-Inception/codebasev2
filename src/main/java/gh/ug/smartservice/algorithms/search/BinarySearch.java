@@ -1,8 +1,7 @@
 package gh.ug.smartservice.algorithms.search;
 
 /**
- * TODO(owner: <your name>): implement BinarySearch.
- * See project brief Section 6/7 for required operations and evidence.
+ * TODO: implement binary search from scratch (requires sorted input).
  */
 public class BinarySearch {
     // TODO

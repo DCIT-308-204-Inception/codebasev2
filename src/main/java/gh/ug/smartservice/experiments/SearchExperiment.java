@@ -1,8 +1,7 @@
 package gh.ug.smartservice.experiments;
 
 /**
- * TODO(owner: <your name>): implement SearchExperiment.
- * See project brief Section 6/7 for required operations and evidence.
+ * TODO: time linear vs binary search across input sizes.
  */
 public class SearchExperiment {
     // TODO

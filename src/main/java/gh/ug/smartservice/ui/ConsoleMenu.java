@@ -5,10 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Generic menu runner. Each teammate's feature is registered here as a
- * MenuCommand rather than as a hand-written switch/case branch — that keeps
- * this file almost never touched after the initial setup, which is exactly
- * where merge conflicts like to happen in group projects.
+ * Generic menu runner. Features register as MenuCommand instances rather
+ * than as hand-written switch/case branches.
  */
 public class ConsoleMenu {
     private final List<MenuCommand> commands = new ArrayList<>();

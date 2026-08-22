@@ -1,8 +1,7 @@
 package gh.ug.smartservice.experiments;
 
 /**
- * TODO(owner: <your name>): implement SortExperiment.
- * See project brief Section 6/7 for required operations and evidence.
+ * TODO: time selection/insertion/merge/quicksort across input sizes.
  */
 public class SortExperiment {
     // TODO

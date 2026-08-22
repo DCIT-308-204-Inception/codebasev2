@@ -1,8 +1,8 @@
 package gh.ug.smartservice.experiments;
 
 /**
- * TODO(owner: <your name>): implement HeapExperiment.
- * See project brief Section 6/7 for required operations and evidence.
+ * TODO: measure BinaryHeapPriorityQueue insert/extract runtime as size
+ * grows.
  */
 public class HeapExperiment {
     // TODO

@@ -1,10 +1,8 @@
 package gh.ug.smartservice.ui;
 
 /**
- * One menu action = one class. To add a new console option, create a new
- * class implementing this interface and register it in ConsoleMenu's
- * command list (one line). You never edit anyone else's command class,
- * and registration touches only your own added line -> minimal merge risk.
+ * One menu action = one class. A new console option is a new class
+ * implementing this interface, registered in ConsoleMenu's command list.
  */
 public interface MenuCommand {
     String label();

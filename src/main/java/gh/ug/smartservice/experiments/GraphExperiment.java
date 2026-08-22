@@ -1,8 +1,7 @@
 package gh.ug.smartservice.experiments;
 
 /**
- * TODO(owner: <your name>): implement GraphExperiment.
- * See project brief Section 6/7 for required operations and evidence.
+ * TODO: measure Dijkstra runtime as graph size grows.
  */
 public class GraphExperiment {
     // TODO
