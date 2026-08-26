@@ -1,9 +1,16 @@
 package gh.ug.smartservice.algorithms.search;
 
-/**
- * TODO: implement linear search from scratch, tested against the same
- * data as BinarySearch.
- */
-public class LinearSearch {
-    // TODO
+public final class LinearSearch {
+
+    private LinearSearch() {
+    }
+
+    public static <T extends Comparable<T>> int search(T[] array, T target) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].compareTo(target) == 0) {
+                return i;
+            }
+        }
+        return -1;
+    }
 }
