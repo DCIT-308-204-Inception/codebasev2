@@ -27,5 +27,17 @@ public final class ExperimentRunner {
         List<AlgorithmRun> hashResults = HashExperiment.run(INPUT_SIZES, TRIALS_PER_SIZE);
         CsvExporter.export(hashResults, outputDir.resolve("csv/hash_results.csv"));
         ChartExporter.exportLineChart("Hash table collision impact by input size", hashResults, outputDir.resolve("graphs/hash_collision_impact.png"));
+
+        List<AlgorithmRun> heapResults = HeapExperiment.run(INPUT_SIZES, TRIALS_PER_SIZE);
+        CsvExporter.export(heapResults, outputDir.resolve("csv/heap_results.csv"));
+        ChartExporter.exportLineChart("Heap operation scaling by input size", heapResults, outputDir.resolve("graphs/heap_operation_scaling.png"));
+
+        List<AlgorithmRun> treeResults = TreeExperiment.run(INPUT_SIZES, TRIALS_PER_SIZE);
+        CsvExporter.export(treeResults, outputDir.resolve("csv/tree_results.csv"));
+        ChartExporter.exportLineChart("Tree insert/search time by input size", treeResults, outputDir.resolve("graphs/tree_time.png"));
+
+        List<AlgorithmRun> graphResults = GraphExperiment.run(INPUT_SIZES, TRIALS_PER_SIZE);
+        CsvExporter.export(graphResults, outputDir.resolve("csv/graph_results.csv"));
+        ChartExporter.exportLineChart("Dijkstra graph-size effect", graphResults, outputDir.resolve("graphs/dijkstra_graph_size.png"));
     }
 }
