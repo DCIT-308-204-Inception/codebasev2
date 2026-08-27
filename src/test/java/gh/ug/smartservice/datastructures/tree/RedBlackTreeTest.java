@@ -31,6 +31,15 @@ class RedBlackTreeTest {
     }
 
     @Test
+    void inorderIsSorted() {
+        RedBlackTree<Integer> tree = new RedBlackTree<>();
+        for (int v : new int[]{10, 20, 30, 15, 5, 25, 1}) {
+            tree.insert(v);
+        }
+        assertEquals(java.util.List.of(1, 5, 10, 15, 20, 25, 30), tree.inorder());
+    }
+
+    @Test
     void emptyTreeBoundary() {
         RedBlackTree<Integer> tree = new RedBlackTree<>();
         assertTrue(tree.isEmpty());
