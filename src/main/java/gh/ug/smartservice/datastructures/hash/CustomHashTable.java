@@ -4,7 +4,8 @@ import gh.ug.smartservice.datastructures.api.SimpleMap;
 
 public class CustomHashTable<K, V> implements SimpleMap<K, V> {
 
-    private static final int DEFAULT_CAPACITY = 16;
+    /** Derived from team member index numbers (sum of last-2-digits, mod 100 + 50, next prime). */
+    private static final int DEFAULT_CAPACITY = 59;
     private static final float LOAD_FACTOR = 0.75f;
 
     private static final class Entry<K, V> {

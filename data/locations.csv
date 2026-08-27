@@ -1,0 +1,53 @@
+location_id,name,area,location_type,x_coord,y_coord
+L000,Circulation Desk,Main Hall,Service Point,0.0,0.0
+L999,Returns Desk,Main Hall,Service Point,0.0,2.0
+L001,"Shelf 001 (Fiction Wing, Aisle 1)",Fiction Wing,Shelf,1,1.5
+L002,"Shelf 002 (Fiction Wing, Aisle 2)",Fiction Wing,Shelf,1,3.0
+L003,"Shelf 003 (Fiction Wing, Aisle 3)",Fiction Wing,Shelf,1,4.5
+L004,"Shelf 004 (Fiction Wing, Aisle 4)",Fiction Wing,Shelf,1,6.0
+L005,"Shelf 005 (Fiction Wing, Aisle 5)",Fiction Wing,Shelf,1,7.5
+L006,"Shelf 006 (Fiction Wing, Aisle 6)",Fiction Wing,Shelf,1,9.0
+L007,"Shelf 007 (Fiction Wing, Aisle 7)",Fiction Wing,Shelf,1,10.5
+L008,"Shelf 008 (Fiction Wing, Aisle 8)",Fiction Wing,Shelf,1,12.0
+L009,"Shelf 009 (Fiction Wing, Aisle 9)",Fiction Wing,Shelf,1,13.5
+L010,"Shelf 010 (Fiction Wing, Aisle 10)",Fiction Wing,Shelf,1,15.0
+L011,"Shelf 011 (Reference Wing, Aisle 1)",Reference Wing,Shelf,11,1.5
+L012,"Shelf 012 (Reference Wing, Aisle 2)",Reference Wing,Shelf,11,3.0
+L013,"Shelf 013 (Reference Wing, Aisle 3)",Reference Wing,Shelf,11,4.5
+L014,"Shelf 014 (Reference Wing, Aisle 4)",Reference Wing,Shelf,11,6.0
+L015,"Shelf 015 (Reference Wing, Aisle 5)",Reference Wing,Shelf,11,7.5
+L016,"Shelf 016 (Reference Wing, Aisle 6)",Reference Wing,Shelf,11,9.0
+L017,"Shelf 017 (Reference Wing, Aisle 7)",Reference Wing,Shelf,11,10.5
+L018,"Shelf 018 (Reference Wing, Aisle 8)",Reference Wing,Shelf,11,12.0
+L019,"Shelf 019 (Reference Wing, Aisle 9)",Reference Wing,Shelf,11,13.5
+L020,"Shelf 020 (Reference Wing, Aisle 10)",Reference Wing,Shelf,11,15.0
+L021,"Shelf 021 (Periodicals Wing, Aisle 1)",Periodicals Wing,Shelf,21,1.5
+L022,"Shelf 022 (Periodicals Wing, Aisle 2)",Periodicals Wing,Shelf,21,3.0
+L023,"Shelf 023 (Periodicals Wing, Aisle 3)",Periodicals Wing,Shelf,21,4.5
+L024,"Shelf 024 (Periodicals Wing, Aisle 4)",Periodicals Wing,Shelf,21,6.0
+L025,"Shelf 025 (Periodicals Wing, Aisle 5)",Periodicals Wing,Shelf,21,7.5
+L026,"Shelf 026 (Periodicals Wing, Aisle 6)",Periodicals Wing,Shelf,21,9.0
+L027,"Shelf 027 (Periodicals Wing, Aisle 7)",Periodicals Wing,Shelf,21,10.5
+L028,"Shelf 028 (Periodicals Wing, Aisle 8)",Periodicals Wing,Shelf,21,12.0
+L029,"Shelf 029 (Periodicals Wing, Aisle 9)",Periodicals Wing,Shelf,21,13.5
+L030,"Shelf 030 (Periodicals Wing, Aisle 10)",Periodicals Wing,Shelf,21,15.0
+L031,"Shelf 031 (Textbook Wing, Aisle 1)",Textbook Wing,Shelf,31,1.5
+L032,"Shelf 032 (Textbook Wing, Aisle 2)",Textbook Wing,Shelf,31,3.0
+L033,"Shelf 033 (Textbook Wing, Aisle 3)",Textbook Wing,Shelf,31,4.5
+L034,"Shelf 034 (Textbook Wing, Aisle 4)",Textbook Wing,Shelf,31,6.0
+L035,"Shelf 035 (Textbook Wing, Aisle 5)",Textbook Wing,Shelf,31,7.5
+L036,"Shelf 036 (Textbook Wing, Aisle 6)",Textbook Wing,Shelf,31,9.0
+L037,"Shelf 037 (Textbook Wing, Aisle 7)",Textbook Wing,Shelf,31,10.5
+L038,"Shelf 038 (Textbook Wing, Aisle 8)",Textbook Wing,Shelf,31,12.0
+L039,"Shelf 039 (Textbook Wing, Aisle 9)",Textbook Wing,Shelf,31,13.5
+L040,"Shelf 040 (Textbook Wing, Aisle 10)",Textbook Wing,Shelf,31,15.0
+L041,"Shelf 041 (Special Collections Wing, Aisle 1)",Special Collections Wing,Shelf,41,1.5
+L042,"Shelf 042 (Special Collections Wing, Aisle 2)",Special Collections Wing,Shelf,41,3.0
+L043,"Shelf 043 (Special Collections Wing, Aisle 3)",Special Collections Wing,Shelf,41,4.5
+L044,"Shelf 044 (Special Collections Wing, Aisle 4)",Special Collections Wing,Shelf,41,6.0
+L045,"Shelf 045 (Special Collections Wing, Aisle 5)",Special Collections Wing,Shelf,41,7.5
+L046,"Shelf 046 (Special Collections Wing, Aisle 6)",Special Collections Wing,Shelf,41,9.0
+L047,"Shelf 047 (Special Collections Wing, Aisle 7)",Special Collections Wing,Shelf,41,10.5
+L048,"Shelf 048 (Special Collections Wing, Aisle 8)",Special Collections Wing,Shelf,41,12.0
+L049,"Shelf 049 (Special Collections Wing, Aisle 9)",Special Collections Wing,Shelf,41,13.5
+L050,"Shelf 050 (Special Collections Wing, Aisle 10)",Special Collections Wing,Shelf,41,15.0
