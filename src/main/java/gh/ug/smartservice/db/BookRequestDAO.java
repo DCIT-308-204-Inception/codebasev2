@@ -32,6 +32,18 @@ public class BookRequestDAO {
         }
     }
 
+    public void updateStatus(int requestId, String status) {
+        String sql = "UPDATE book_requests SET status = ? WHERE requestId = ?";
+        Connection connection = DatabaseConnection.get();
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setString(1, status);
+            statement.setInt(2, requestId);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new IllegalStateException("Could not update status for book request " + requestId, e);
+        }
+    }
+
     public List<BookRequest> findAll() {
         String sql = "SELECT requestId, sourceShelfId, destinationShelfId, category, urgency, "
             + "timeSubmitted, deadline, status FROM book_requests";
