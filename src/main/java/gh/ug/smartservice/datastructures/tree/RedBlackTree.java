@@ -1,5 +1,8 @@
 package gh.ug.smartservice.datastructures.tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RedBlackTree<T extends Comparable<T>> {
 
     private static final boolean RED = true;
@@ -69,6 +72,21 @@ public class RedBlackTree<T extends Comparable<T>> {
 
     public boolean isEmpty() {
         return size == 0;
+    }
+
+    public List<T> inorder() {
+        List<T> result = new ArrayList<>();
+        inorder(root, result);
+        return result;
+    }
+
+    private void inorder(Node node, List<T> result) {
+        if (node == null) {
+            return;
+        }
+        inorder(node.left, result);
+        result.add(node.value);
+        inorder(node.right, result);
     }
 
     private void fixInsert(Node node) {
