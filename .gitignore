@@ -7,3 +7,4 @@ target/
 results/csv/
 results/graphs/
 dependency-reduced-pom.xml
+data/smart_library.db
