@@ -1,6 +1,7 @@
 package gh.ug.smartservice;
 
 import gh.ug.smartservice.db.DatabaseMenuCommand;
+import gh.ug.smartservice.engine.SchedulingMenuCommand;
 import gh.ug.smartservice.experiments.EfficiencyLabMenuCommand;
 import gh.ug.smartservice.ui.ConsoleMenu;
 
@@ -15,9 +16,9 @@ public class App {
         ConsoleMenu menu = new ConsoleMenu();
 
         menu.register(new DatabaseMenuCommand());
+        menu.register(new SchedulingMenuCommand());
         menu.register(new EfficiencyLabMenuCommand());
-        // Register further MenuCommand instances here, e.g.:
-        // menu.register(new gh.ug.smartservice.engine.SchedulingMenuCommand(...));
+        // Register further MenuCommand instances here.
 
         menu.run();
     }
