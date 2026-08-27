@@ -14,7 +14,7 @@ public class DatabaseMenuCommand implements MenuCommand {
         System.out.println("Creating tables (if not already present)...");
         DatabaseInitializer.initialize();
         System.out.println("Loading seed CSVs into the database...");
-        CsvLoader.loadAll();
-        System.out.println("Done.");
+        boolean loaded = CsvLoader.loadAll();
+        System.out.println(loaded ? "Done." : "Data already loaded, skipped.");
     }
 }

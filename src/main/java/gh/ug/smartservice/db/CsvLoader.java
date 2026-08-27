@@ -18,11 +18,16 @@ public final class CsvLoader {
     private CsvLoader() {
     }
 
-    public static void loadAll() {
+    /** Loads the seed CSVs into the database. Returns false (and does nothing) if data is already loaded. */
+    public static boolean loadAll() {
+        if (!new ShelfDAO().findAll().isEmpty()) {
+            return false;
+        }
         loadShelves();
         loadPaths();
         loadBookRequests();
         loadStaff();
+        return true;
     }
 
     private static void loadShelves() {
