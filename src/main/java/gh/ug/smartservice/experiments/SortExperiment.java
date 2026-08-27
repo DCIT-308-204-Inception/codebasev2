@@ -19,7 +19,7 @@ public final class SortExperiment {
 
     public static List<AlgorithmRun> run(int[] inputSizes, int trialsPerSize) {
         List<AlgorithmRun> results = new ArrayList<>();
-        Random random = new Random(42);
+        Random random = new Random(9808);
 
         for (int size : inputSizes) {
             for (int trial = 0; trial < trialsPerSize; trial++) {
