@@ -2,6 +2,7 @@ package gh.ug.smartservice;
 
 import gh.ug.smartservice.db.DatabaseMenuCommand;
 import gh.ug.smartservice.engine.IndexingMenuCommand;
+import gh.ug.smartservice.engine.OptimisationMenuCommand;
 import gh.ug.smartservice.engine.RouteMenuCommand;
 import gh.ug.smartservice.engine.SchedulingMenuCommand;
 import gh.ug.smartservice.experiments.EfficiencyLabMenuCommand;
@@ -21,6 +22,7 @@ public class App {
         menu.register(new SchedulingMenuCommand());
         menu.register(new IndexingMenuCommand());
         menu.register(new RouteMenuCommand());
+        menu.register(new OptimisationMenuCommand());
         menu.register(new EfficiencyLabMenuCommand());
         // Register further MenuCommand instances here.
 
