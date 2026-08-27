@@ -11,14 +11,14 @@ them into a runnable system.
 
 ```
 smart-service-optimizer/
-├── pom.xml                     # Maven build — deps: sqlite-jdbc, JUnit 5
+├── pom.xml                     # Maven build — deps: sqlite-jdbc, JFreeChart, JUnit 5
 ├── data/
 │   ├── schema.sql               # CREATE TABLE statements
 │   └── *.csv                    # seed data
 ├── docs/                        # report drafts, diagrams
 ├── src/main/java/gh/ug/smartservice/
 │   ├── App.java                  # entry point
-│   ├── model/                    # Shelf, Path, BookRequest, Staff, AlgorithmRun
+│   ├── model/                    # Shelf, Path, BookRequest, Staff, AlgorithmRun, AuditEvent
 │   ├── datastructures/
 │   │   ├── api/                   # interfaces: SimpleList, SimpleStack, SimpleGraph...
 │   │   └── list/ stack/ queue/ heap/ tree/ hash/ disjointset/ graph/
@@ -35,19 +35,34 @@ smart-service-optimizer/
 ## Running it
 
 ```bash
-# Build
-mvn compile
-
-# Run tests
-mvn test
-
-# Initialize the SQLite DB (once)
-sqlite3 data/smart_service.db < data/schema.sql
+# Build, run tests, and package a runnable jar
+mvn clean package
 
 # Run the app
-mvn compile exec:java -Dexec.mainClass="gh.ug.smartservice.App"
-# (or: mvn package && java -jar target/smart-service-optimizer.jar)
+java -jar target/smart-service-optimizer.jar
 ```
+
+This opens an interactive console menu:
+
+```
+1. Initialize database and load seed data
+2. Dispatch pending book requests (FIFO/urgency/shift/interrupt)
+3. Search shelf/request indexes (category/section/status)
+4. Find routes between shelves (fastest path, reachability, MST)
+5. Optimise staff assignment and request selection (greedy/DP)
+6. Dispatch a request and undo it (audit trail demo)
+7. Run efficiency lab (sort/search/hash experiments)
+0. Exit
+```
+
+**Run option `1` first.** It creates `data/smart_library.db` and loads
+`data/*.csv` into it — options 2–6 read from that database, so they'll show
+nothing until it's been loaded once. Re-running option 1 later is safe; it
+detects existing data and skips instead of erroring. Option 7 doesn't need
+the database — it generates its own data and writes CSVs/graphs to
+`results/csv/` and `results/graphs/`.
+
+Enter a number and press Enter to pick an option; `0` exits.
 
 ## Implementation constraint
 
